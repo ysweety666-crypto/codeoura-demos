@@ -1,0 +1,11 @@
+{
+  "name": "نظام محاسبة المدراء",
+  "short_name": "محاسبة المدراء",
+  "start_url": "/dashboard",
+  "display": "standalone",
+  "background_color": "#f6f7f9",
+  "theme_color": "#0d9488",
+  "lang": "ar",
+  "dir": "rtl",
+  "icons": []
+}
