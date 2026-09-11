@@ -15,6 +15,7 @@
 | منيو QR رقمي — فيروز | `/firuze-menu/` |
 | لوحة محاسبة المدراء — كوبونك | `/couponak-manager/` |
 | نظام إدارة المخزون — كوبونك | `/couponak-inventory/` |
+| نظام وكالة سفر — بابونيك | `/babunec/tr/dashboard/` |
 
 ## البيانات
 

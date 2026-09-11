@@ -1,0 +1,16 @@
+{
+  "name": "Babunec Travel",
+  "short_name": "Babunec",
+  "description": "Tourism Accounting & ERP System",
+  "start_url": "/tr/dashboard",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#171717",
+  "icons": [
+    {
+      "src": "/next.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    }
+  ]
+}
