@@ -127,7 +127,7 @@
     </p>
 
     <div class="note">
-      <b>كل البيانات وهمية.</b> هذه النسخ لا تتصل بأي قاعدة بيانات، ولا تحتوي
+      <b>نسخة مجانية للعرض — كل البيانات وهمية.</b> هذه النسخ لا تتصل بأي قاعدة بيانات، ولا تحتوي
       ملفاتها على أي مفتاح أو رابط لأي نظام حقيقي. أي تعديل تجريه يبقى في
       متصفحك ويختفي عند إعادة التحميل.
     </div>
@@ -269,6 +269,50 @@
       </div>
     </a>
 
+    <a class="card" href="./firuze-system/">
+      <div class="thumb" style="background:
+        radial-gradient(ellipse 70% 90% at 15% 10%, oklch(0.72 0.13 195), transparent 60%),
+        radial-gradient(ellipse 70% 90% at 85% 90%, oklch(0.5 0.12 250), transparent 60%),
+        linear-gradient(140deg, oklch(0.72 0.13 195), oklch(0.5 0.12 250));">
+        <span>فيروز — التشغيل</span>
+      </div>
+      <div class="body">
+        <p class="cat">ضيافة · تشغيل ومحاسبة</p>
+        <h2 class="name">نظام تشغيل مطعم</h2>
+        <p class="desc">
+          عمّال وحضور ورواتب وسلف ومكافآت وخصومات، مشتريات وموردين وميزانيات،
+          هدر ومصاريف تشغيلية وديون وفواتير وتقارير.
+        </p>
+        <div class="tags">
+          <span class="tag">Next.js</span><span class="tag">Prisma</span>
+          <span class="tag">23 نموذج</span><span class="tag">RTL</span>
+        </div>
+        <span class="open">افتح الديمو ←</span>
+      </div>
+    </a>
+
+    <a class="card" href="./cleveland/ar/">
+      <div class="thumb" style="background:
+        radial-gradient(ellipse 70% 90% at 15% 10%, oklch(0.7 0.14 190), transparent 60%),
+        radial-gradient(ellipse 70% 90% at 85% 90%, oklch(0.5 0.12 240), transparent 60%),
+        linear-gradient(140deg, oklch(0.7 0.14 190), oklch(0.5 0.12 240));">
+        <span>كليفلاند ميديكالز</span>
+      </div>
+      <div class="body">
+        <p class="cat">صحة · منصة طبية</p>
+        <h2 class="name">منصة عيادات واستشارات</h2>
+        <p class="desc">
+          تخصصات وأطباء وخدمات ومواعيد وحجز، بثلاث لغات. لا تحتوي هذه النسخة
+          أي سجلات مرضى — ولا حتى وهمية.
+        </p>
+        <div class="tags">
+          <span class="tag">Next.js</span><span class="tag">Prisma</span>
+          <span class="tag">عربي/إنجليزي/عبري</span>
+        </div>
+        <span class="open">افتح الديمو ←</span>
+      </div>
+    </a>
+
   </div>
 </main>
 
@@ -278,5 +322,65 @@
 </footer>
 
 <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+<!--
+  شارة "نسخة مجانية" الموحّدة عبر كل الديموهات.
+
+  تُحقن في نهاية <body> بعد البناء، لا داخل شيفرة كل تطبيق: التطبيقات الثمانية
+  مكتوبة بأطر ولغات واجهة مختلفة، وحقنة واحدة بعد البناء تضمن أن الشارة نفسها
+  تظهر في كلها بالشكل نفسه — ولا تُنسى في واحد منها.
+
+  وجودها مسألة صدق لا تزيين: بدونها قد يظن الزائر أن ما يراه أرقام زبون حقيقي.
+-->
+<style>
+  .codeoura-free-badge {
+    position: fixed;
+    inset-inline: 0;
+    bottom: 0;
+    z-index: 2147483000;
+    display: flex;
+    justify-content: center;
+    padding: 0 12px 12px;
+    pointer-events: none;
+    font-family: system-ui, -apple-system, "Segoe UI", Tahoma, sans-serif;
+  }
+  .codeoura-free-badge > span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    max-width: 100%;
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: rgba(17, 17, 20, 0.92);
+    color: #fff;
+    font-size: 12.5px;
+    font-weight: 500;
+    line-height: 1.45;
+    text-align: center;
+    box-shadow: 0 8px 30px -8px rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+  .codeoura-free-badge b {
+    color: #fbbf24;
+    font-weight: 700;
+  }
+  .codeoura-free-badge i {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #fbbf24;
+    flex: 0 0 auto;
+  }
+  /* الطباعة: الشارة عنصر شاشة، ولا محل لها في فاتورة أو تقرير مطبوع */
+  @media print {
+    .codeoura-free-badge { display: none !important; }
+  }
+</style>
+<div class="codeoura-free-badge" dir="rtl" aria-hidden="true">
+  <span>
+    <i></i>
+    <span><b>نسخة مجانية للعرض</b> — بيانات وهمية بالكامل، وأي تعديل يختفي عند إعادة التحميل</span>
+  </span>
+</div>
 </body>
 </html>

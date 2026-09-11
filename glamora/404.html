@@ -10,5 +10,65 @@
   </head>
   <body>
     <div id="root"></div>
-  </body>
+  <!--
+  شارة "نسخة مجانية" الموحّدة عبر كل الديموهات.
+
+  تُحقن في نهاية <body> بعد البناء، لا داخل شيفرة كل تطبيق: التطبيقات الثمانية
+  مكتوبة بأطر ولغات واجهة مختلفة، وحقنة واحدة بعد البناء تضمن أن الشارة نفسها
+  تظهر في كلها بالشكل نفسه — ولا تُنسى في واحد منها.
+
+  وجودها مسألة صدق لا تزيين: بدونها قد يظن الزائر أن ما يراه أرقام زبون حقيقي.
+-->
+<style>
+  .codeoura-free-badge {
+    position: fixed;
+    inset-inline: 0;
+    bottom: 0;
+    z-index: 2147483000;
+    display: flex;
+    justify-content: center;
+    padding: 0 12px 12px;
+    pointer-events: none;
+    font-family: system-ui, -apple-system, "Segoe UI", Tahoma, sans-serif;
+  }
+  .codeoura-free-badge > span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    max-width: 100%;
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: rgba(17, 17, 20, 0.92);
+    color: #fff;
+    font-size: 12.5px;
+    font-weight: 500;
+    line-height: 1.45;
+    text-align: center;
+    box-shadow: 0 8px 30px -8px rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+  .codeoura-free-badge b {
+    color: #fbbf24;
+    font-weight: 700;
+  }
+  .codeoura-free-badge i {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #fbbf24;
+    flex: 0 0 auto;
+  }
+  /* الطباعة: الشارة عنصر شاشة، ولا محل لها في فاتورة أو تقرير مطبوع */
+  @media print {
+    .codeoura-free-badge { display: none !important; }
+  }
+</style>
+<div class="codeoura-free-badge" dir="rtl" aria-hidden="true">
+  <span>
+    <i></i>
+    <span><b>نسخة مجانية للعرض</b> — بيانات وهمية بالكامل، وأي تعديل يختفي عند إعادة التحميل</span>
+  </span>
+</div>
+</body>
 </html>
