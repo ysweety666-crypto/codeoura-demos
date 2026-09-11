@@ -1,0 +1,5 @@
+1:"$Sreact.fragment"
+2:I[39756,["/codeoura-demos/firuze-system/_next/static/chunks/2k9p-ap_ujl1t.js","/codeoura-demos/firuze-system/_next/static/chunks/1-8s9_t85wwr4.js","/codeoura-demos/firuze-system/_next/static/chunks/3jcbfs-a095yv.js"],"default"]
+3:I[37457,["/codeoura-demos/firuze-system/_next/static/chunks/2k9p-ap_ujl1t.js","/codeoura-demos/firuze-system/_next/static/chunks/1-8s9_t85wwr4.js","/codeoura-demos/firuze-system/_next/static/chunks/3jcbfs-a095yv.js"],"default"]
+4:[]
+0:{"rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"isPartial":false,"staleTime":300,"varyParams":"$W4","buildId":"eSyy9ajdom1CnMQrkemHJ"}
